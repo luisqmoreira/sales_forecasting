@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sales Model</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body style="background-color:powderblue;">´
+
+    <div class = 'content'>
+        <h1> Machine Learning Model </h1>
+        
+        <form method = "POST">
+            <label> Category </label>
+            <input type = "text" name ="feature 1" id = "feature_1">
+            
+            <br>
+            <br>
+            <label> Size </label>
+            <input type = "text" name = "feature 2" id = "feature_2">
+            <br>
+            <br>
+            <label> Product </label>
+            <input type = "text" name = "feature 3" id = "feature_3">
+            <br>
+            <br>
+            <label> Season </label>
+            <input type = "text" name = "feature 4" id = "feature_4">
+            <br>
+            <br> 
+            <input type = "submit" value = "Run Model" >
+            
+        </form>
+        
+        {% for result in results %}
+        
+        <h2> The result of our prediction is {{result}} </h2>
+        
+        {% endfor %}
+        </div>
+
+</body>
+</html>
